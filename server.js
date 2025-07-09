@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 // 👇 Add this route
 app.get('/', (req, res) => {
